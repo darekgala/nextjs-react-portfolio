@@ -5,3 +5,4 @@ files:
 rules:
   nesting-depth: 0
 	class-name-format: 0
+	property-sort-order: 0
