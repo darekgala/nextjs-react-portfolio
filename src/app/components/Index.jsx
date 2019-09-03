@@ -1,7 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Head from 'next/head';
+import Navbar from './Navbar';
 import 'bootstrap/scss/bootstrap.scss';
+import '../static/styles/main.scss';
 
 export const Index = ({ title, children }) => (
   <div>
@@ -16,7 +18,13 @@ export const Index = ({ title, children }) => (
       <title>{title}</title>
     </Head>
 
-    {children}
+    <div className="dg-container">
+      <Navbar className="dg-container__navbar" />
+
+      <div className="dg-container__content">
+        {children}
+      </div>
+    </div>
   </div>
 );
 

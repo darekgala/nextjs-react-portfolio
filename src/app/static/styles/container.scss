@@ -1,0 +1,24 @@
+$navbar-width: 20%;
+
+.dg-container {
+  height: 100%;
+  position: relative;
+
+  &__navbar {
+    height: 100%;
+    position: fixed;
+    width: $navbar-width;
+
+    & ul {
+      list-style-type: none;
+      padding: 0;
+    }
+  }
+
+  &__content {
+    left: $navbar-width;
+    padding: 3rem;
+    position: absolute;
+    width: calc(100% - $navbar-width);
+  }
+}
