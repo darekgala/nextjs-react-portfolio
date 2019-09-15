@@ -4,17 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "check": "yarn babel",
     "build": "next build",
     "start": "next start"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.22",
-    "@fortawesome/free-brands-svg-icons": "^5.10.2",
-    "@fortawesome/free-regular-svg-icons": "^5.10.2",
-    "@fortawesome/free-solid-svg-icons": "^5.10.2",
-    "@fortawesome/react-fontawesome": "^0.1.4",
     "@zeit/next-sass": "^1.0.1",
-    "babel-eslint": "^10.0.3",
     "bootstrap": "^4.3.1",
     "classnames": "^2.2.6",
     "eslint": "^6.3.0",
@@ -22,7 +17,22 @@
     "next": "9.0.5",
     "node-sass": "^4.12.0",
     "prop-types": "^15.7.2",
+    "prop-types-extra": "^1.1.0",
     "react": "16.9.0",
     "react-dom": "16.9.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.0",
+    "@babel/core": "^7.6.0",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/preset-flow": "^7.0.0",
+    "@babel/runtime": "^7.6.0",
+    "babel-eslint": "^10.0.3",
+    "babel-plugin-react-flow-props-to-prop-types": "^0.15.0",
+    "babel-preset-next": "^1.2.0",
+    "eslint-plugin-react-hooks": "^2.0.1",
+    "flow-bin": "^0.107.0"
   }
 }

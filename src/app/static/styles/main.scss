@@ -1,8 +1,14 @@
+@import './variables';
 @import './colors';
 @import './container';
 @import './navbar';
+@import './icon';
+@import './text';
+@import './section';
+@import './aside';
 
 body {
+  background-color: $color-light;
   font-family: 'Poppins', sans-serif;
   min-height: 100%;
 };

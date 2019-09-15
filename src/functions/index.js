@@ -5,5 +5,5 @@ const app = next({ dev, conf: { distDir: 'next' } });
 const handle = app.getRequestHandler();
 
 exports.next = functions.https.onRequest((req, res) =>
- app.prepare().then(() => handle(req, res))
+  app.prepare().then(() => handle(req, res))
 );

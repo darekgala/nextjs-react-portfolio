@@ -8,7 +8,8 @@
     "preserve": "yarn build-all",
     "serve": "firebase serve",
     "predeploy": "yarn build-all",
-    "deploy": "firebase deploy",
+    "copy-static": "del \"src/public/static\" && xcopy  \"src/app/static/img\" \"src/public/static/img\"",
+    "deploy": "yarn copy-static && firebase deploy",
     "build-all": "yarn build-next && yarn build-firebase",
     "build-next": "cd \"src/app\" && yarn && yarn build",
     "build-firebase": "cd \"src/functions\" && yarn"

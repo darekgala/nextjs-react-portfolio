@@ -8,17 +8,14 @@
     max-width: 140px;
   }
 
-  &__title {
+  &-logo__title {
     font-family: 'Pacifico', cursive;
   }
 
   &__item {
     cursor: pointer;
-    padding-left: 20%;
 
     &:hover {
-      // background-color: $color-muted;
-
       & .dg-navbar__item-link {
         color: $color-light;
       }
@@ -31,6 +28,12 @@
       &--active {
         color: $color-light;
       }
+    }
+  }
+
+  @media screen and (min-width: $breakpoint-desktop) {
+    &__item {
+      width: 170px;
     }
   }
 }

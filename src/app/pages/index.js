@@ -1,11 +1,10 @@
 import React from 'react';
 import Index from '../components/Index';
+import About from '../components/about/About';
 
 const Home = () => (
-  <Index title="Home">
-    <div className="hero">
-      Home
-    </div>
+  <Index title="About">
+    <About />
   </Index>
 );
 

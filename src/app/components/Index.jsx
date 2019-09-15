@@ -1,11 +1,16 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+//@flow
+import * as React from 'react';
 import Head from 'next/head';
-import Navbar from './Navbar';
 import 'bootstrap/scss/bootstrap.scss';
 import '../static/styles/main.scss';
+import Navbar from './navbar/Navbar';
 
-export const Index = ({ title, children }) => (
+type Props = {
+  title: string,
+  children: React.Node
+};
+
+export const Index = ({title, children}: Props) => (
   <div>
     <Head>
       <meta charset="UTF-8" />
@@ -14,23 +19,18 @@ export const Index = ({ title, children }) => (
       <meta name="author" content="Dariusz Gala" />
       <meta name="description" content="Dariusz Gala Fron-End Developer home page" />
       <meta name="keywords" content="web, app, it, web-app, application, website, dariusz, dariusz gala, gala, front-end, front-end developer, portfolio, dariusz gala portfolio, dariusz gala front-end" />
-      <link rel="shortcut icon" href="/static/favicon.ico" />
+      <link rel="shortcut icon" href="/static/img/favicon.ico" />
       <title>{title}</title>
     </Head>
 
     <div className="dg-container">
-      <Navbar className="dg-container__navbar" />
+      <Navbar />
 
-      <div className="dg-container__content">
+      <main className="dg-container__content">
         {children}
-      </div>
+      </main>
     </div>
   </div>
 );
-
-Index.propTypes = {
-  title: PropTypes.string.isRequired,
-  children: PropTypes.node.isRequired
-};
 
 export default Index;
