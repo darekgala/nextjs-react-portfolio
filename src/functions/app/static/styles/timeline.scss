@@ -1,0 +1,51 @@
+$border-color: $color-muted;
+
+.dg-timeline {
+  display: flex;
+  flex-direction: column;
+
+  &__period {
+    flex-shrink: 0;
+    min-width: 125px;
+    position: relative;
+    white-space: nowrap;
+  }
+
+  &__content {
+    align-items: center;
+  };
+
+  &__text {
+    width: 100%;
+  }
+
+  @media screen and (min-width: $breakpoint-small) {
+    flex-direction: row;
+
+    &__content {
+      align-items: flex-start;
+      border-left: 1px solid $border-color;
+      margin-left: -11px;
+    }
+
+    &__text {
+      width: inherit;
+    }
+
+    &__period {
+      padding-top: 40px;
+    }
+
+    &__period::after {
+      background-color: $color-white;
+      border: 1px solid $border-color;
+      border-radius: 50%;
+      content: '';
+      height: 20px;
+      margin-left: 15px;
+      margin-top: 4px;
+      right: -25px;
+      width: 20px;
+    }
+  }
+}

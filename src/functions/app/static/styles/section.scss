@@ -1,0 +1,14 @@
+$padding-small: 15px;
+$padding: 65px;
+
+.dg-section {
+  padding: $padding-small $padding-small 0;
+
+  &:last-child {
+    padding-bottom: $padding-small;
+  }
+
+  @media screen and (min-width: $breakpoint-desktop) {
+    padding: $padding $padding 0;
+  }
+}

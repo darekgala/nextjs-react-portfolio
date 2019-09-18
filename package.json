@@ -4,14 +4,14 @@
   "license": "MIT",
   "scripts": {
     "install": "yarn build-all",
-    "next": "yarn build-firebase && cd \"src/app\" && yarn && yarn dev",
+    "next": "yarn build-firebase && cd \"src/functions/app\" && yarn && yarn dev",
     "preserve": "yarn build-all",
     "serve": "firebase serve",
     "predeploy": "yarn build-all",
-    "copy-static": "del \"src/public/static\" && xcopy  \"src/app/static/img\" \"src/public/static/img\"",
+    "copy-static": "del \"src/public/static\" && xcopy  \"src/functions/app/static/img\" \"src/public/static/img\"",
     "deploy": "yarn copy-static && firebase deploy",
     "build-all": "yarn build-next && yarn build-firebase",
-    "build-next": "cd \"src/app\" && yarn && yarn build",
+    "build-next": "cd \"src/functions/app\" && yarn && yarn build",
     "build-firebase": "cd \"src/functions\" && yarn"
   },
   "dependencies": {

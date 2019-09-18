@@ -23,12 +23,29 @@
     "firebase-functions": "^3.1.0",
     "next": "^9.0.5",
     "react": "^16.9.0",
-    "react-dom": "^16.9.0"
+    "react-dom": "^16.9.0",
+    "bootstrap": "^4.3.1",
+    "node-sass": "^4.12.0",
+    "prop-types": "^15.7.2",
+    "prop-types-extra": "^1.1.0"
   },
   "devDependencies": {
-    "eslint": "^5.12.0",
+    "eslint": "^6.3.0",
+    "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-promise": "^4.0.1",
-    "firebase-functions-test": "^0.1.6"
+    "eslint-plugin-react-hooks": "^2.0.1",
+    "firebase-functions-test": "^0.1.6",
+    "@babel/cli": "^7.6.0",
+    "@babel/core": "^7.6.0",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/preset-flow": "^7.0.0",
+    "@babel/runtime": "^7.6.0",
+    "babel-eslint": "^10.0.3",
+    "babel-plugin-react-flow-props-to-prop-types": "^0.15.0",
+    "babel-preset-next": "^1.2.0",
+    "flow-bin": "^0.107.0"
   },
   "private": true
 }
