@@ -17,7 +17,7 @@ export const SectionHobbies = () : React.Element<any> => (
     </div>
 
     <div className="mb-2">
-      I really like movies and TV series in simillar topics as books. Few of my favourite movies are: <i>Interstellar</i>, <i>Arrival</i>, <i>Distict 9</i>, <i>Star Wars</i>. Lastly I gave a chance to the Marvel movies and... I have become a big fan of this universe - Iron Man is my favouirte character. For TV series are ejnoyed watching <i>Westworld</i>, <i>Stranger Things</i>, <i>Chernobyl</i>, <i>Big Bang Theory</i>.
+      I really like movies and TV series in simillar topics as books. Few of my favourite movies are: <i>Interstellar</i>, <i>Arrival</i>, <i>Distict 9</i>, <i>Star Wars</i>. Lastly I gave a chance to the Marvel movies and... I have become a big fan of this universe - Iron Man is my favouirte character. For TV series are ejnoyed watching <i>Westworld</i>, <i>Stranger Things</i>, <i>Chernobyl</i>, <i>Mr Robot</i>, <i>Big Bang Theory</i>.
     </div>
   </ContentSection>
 );

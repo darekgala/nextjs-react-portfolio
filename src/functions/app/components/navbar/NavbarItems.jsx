@@ -23,7 +23,7 @@ export const NavbarItems = ({ pathname, className }: Props) => {
     { text: 'Experience', href: PATH.EXPERIENCE, icon: 'icon-cup', active: pathname === PATH.EXPERIENCE },
     { text: 'Stack', href: PATH.STACK, icon: 'icon-database', active: pathname === PATH.STACK },
     { text: 'Portfolio', href: PATH.PORTFOLIO, icon: 'icon-desktop', active: pathname === PATH.PORTFOLIO },
-    { text: 'Playground', href: PATH.PLAYGROUND, icon: 'icon-beaker', active: pathname === PATH.PLAYGROUND },
+    // { text: 'Playground', href: PATH.PLAYGROUND, icon: 'icon-beaker', active: pathname === PATH.PLAYGROUND },
     { text: 'Contact', href: PATH.CONTACT, icon: 'icon-comment', active: pathname === PATH.CONTACT }
   ];
 

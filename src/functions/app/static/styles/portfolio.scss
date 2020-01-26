@@ -1,0 +1,48 @@
+.dg-portfolio-list {
+  &__item {
+    border-radius: .25rem;
+    color: $color-dark;
+    overflow: hidden;
+    width: 100%;
+
+    &:hover {
+      color: $color-dark;
+      text-decoration: none;
+
+      .dg-portfolio-list__item-background {
+        filter: none;
+      }
+    }
+  }
+
+  &__item-background {
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    flex-shrink: 0;
+    // filter: blur(5px);
+
+    &--pzme {
+      background-image: url('/static/img/pzme.jpg');
+    }
+
+    &--droplabs-panel {
+      background-image: url('/static/img/droplabs-panel.jpg');
+    }
+
+    &--droplabs-widget {
+      background-image: url('/static/img/droplabs-widget.jpg');
+    }
+
+    &--proeko2 {
+      background-image: url('/static/img/proeko2.jpg');
+    }
+  }
+
+  &__item-content {
+    width: 100%;
+    background-color: white;
+    flex-grow: 1;
+  }
+}

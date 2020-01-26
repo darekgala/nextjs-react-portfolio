@@ -1,0 +1,5 @@
+.dg-contact {
+  @media screen and (min-width: $breakpoint-medium) {
+    border-left: 1px solid $color-border;
+  }
+}

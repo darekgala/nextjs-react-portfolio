@@ -3,7 +3,7 @@ import Index from '../components/Index';
 import AboutPage from '../components/pages/about/AboutPage';
 
 const Home = () => (
-  <Index title="About">
+  <Index title="Dariusz Gala - About">
     <AboutPage />
   </Index>
 );

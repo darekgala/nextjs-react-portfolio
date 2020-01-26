@@ -3,7 +3,7 @@ import Index from '../components/Index';
 import WelcomePage from '../components/pages/WelcomePage';
 
 const Home = () => (
-  <Index title="Dariusz Gala - Front-end Developer">
+  <Index title="Dariusz Gala - Front-End Developer">
     <WelcomePage />
   </Index>
 );

@@ -1,0 +1,14 @@
+$logos: react redux sass sqlite ts webpack agh babel css enzyme firebase flow akamai git angularjs bootstrap node php preact bulma ibm html r next droplabs eslint jasmine jest js ivlo kambu mysql backbone;
+
+.dg-logo {
+  height: 100px;
+  width: 100px;
+
+  @each $logo in $logos {
+    $index: index($logos, $logo) - 1;
+
+    &--#{$logo} {
+      background: url("/static/img/sprites.png") 0 -#{$index * 100}px;
+    }
+  }
+};

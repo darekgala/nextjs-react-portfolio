@@ -1,6 +1,7 @@
 //@flow
 import * as React from 'react';
 import {TimelineItems} from './timelineTypes';
+import Logo from '../Logo';
 
 export const Timeline = ({ items, periodComponentWidth }: TimelineItems): React.Element<'ul'> => {
   const elementStyle = periodComponentWidth && {style: {minWidth: periodComponentWidth}};
@@ -18,7 +19,7 @@ export const Timeline = ({ items, periodComponentWidth }: TimelineItems): React.
             </div>
 
             <div className="dg-timeline__content d-flex flex-column flex-sm-row pr-sm-3 pl-sm-2 pt-sm-4 pb-4">
-              <img src={`/static/img/${logo}`} style={{ width: 75, height: 75 }} className="mx-3 mb-2 mb-sm-0 flex-shrink-0" />
+              <Logo type={`${logo}`} className="mx-3 mb-2 mb-sm-0 flex-shrink-0" />
               <div className="d-flex flex-column dg-timeline__text">
                 <div><b>{name}</b></div>
                 <div>{content}</div>

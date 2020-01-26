@@ -17,8 +17,8 @@ export const Index = ({title, children}: Props) => (
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
       <meta name="author" content="Dariusz Gala" />
-      <meta name="description" content="Dariusz Gala Fron-End Developer home page" />
-      <meta name="keywords" content="web, app, it, web-app, application, website, dariusz, dariusz gala, gala, front-end, front-end developer, portfolio, dariusz gala portfolio, dariusz gala front-end" />
+      <meta name="description" content="Strona wizytówka/portfolio, gdzie poza moimi projektami znajdziesz dodatkowe informacje o moich umiejętnościach, doświadczeniu, edukacji czy zainteresowaniach" />
+      <meta name="keywords" content="website, dariusz, dariusz gala, gala, front-end, front-end developer, dariusz gala portfolio, dariusz gala front-end developer" />
       <link rel="shortcut icon" href="/static/img/favicon.ico" />
       <title>{title}</title>
     </Head>
